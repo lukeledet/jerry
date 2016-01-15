@@ -1,0 +1,3 @@
+after_success:
+  - git remote add deploy dokku@atda.club:jerry
+  - git push deploy master
