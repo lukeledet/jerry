@@ -1,7 +1,0 @@
-language: node_js
-node_js:
-  - "5.1"
-after_success:
-  - ssh-keyscan atda.club >> ~/.ssh/known_hosts
-  - git remote add deploy dokku@atda.club:jerry
-  - git push deploy master
